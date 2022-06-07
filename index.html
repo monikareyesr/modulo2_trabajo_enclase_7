@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>modulo 2 clase 7 </title>
+</head>
+
+<body>
+   <div id="source">
+      <p>Ejercicios de Dom . En primer lugar</p>
+   </div>
+
+   <div id="destination">
+      <p>El DOM se puede cambiar. En segundo lugar</p>
+   </div>
+
+   <script>
+
+const etiqueta=document.querySelector('#source')  //llamar a mi etiqueta
+const etiqueta2=document.querySelector('#destination')
+const intermedia=etiqueta.innerHTML
+
+//intercambiar contenido, necesito un valor intermedio internamente. en una variable auxilar intermedia
+
+etiqueta.innerHTML=etiqueta2.innerHTML;   //intercambiar source por destination.
+etiqueta2.innerHTML= intermedia; //intercambiar destination
+
+   </script>
+</body>
+
+</html>
